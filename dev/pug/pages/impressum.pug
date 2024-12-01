@@ -1,0 +1,58 @@
+extends ../layouts/base
+
+block variables
+  - pageLang = ""
+  - pageTitle = "Impressum"
+  - pageDescription = "Page-specific description"
+  - pageKeywords = "Page-specific keywords"
+  - pageUrl = "/impressum"
+
+
+block body-content
+  // $Page header
+  header.page-header.js-header
+    .page-header__inner
+      .page-header__logo
+        h1 Energy Scout
+        | &nbsp;
+        span Tagline TODO
+      nav.page-header__nav.js-nav
+        ul
+          li
+            a.page-header__nav-link.js-anchor.js-link.is-active(href='/#home') Home
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#portfolio') Test
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#team') Ablauf
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#contact') Kontakt
+
+  // $Impressum section
+  section#impressum
+    h2.impressum__title Impressum
+    p.impressum__inner.
+      Ex Ovo GmbH
+      <br>
+      Musterstraße 1<br>
+      1010 Wien<br>
+      Österreich<br>
+      <br>
+      <br>
+      <strong>Telefon:</strong> +43 1 234 567 890<br>
+      E-Mail: info@exovo.at<br>
+      Web: www.exovo.at<br>
+      <br>
+      Firmenbuchnummer: FN 123456a<br>
+      Firmenbuchgericht: Handelsgericht Wien<br>
+      <br>
+      UID-Nummer: ATU12345678<br>
+      <br>
+      Geschäftsführer: Max Muster<br>
+      <br>
+      Aufsichtsbehörde: Bezirkshauptmannschaft Wien (bei spezifischen Tätigkeiten anzugeben)<br>
+      <br>
+      Haftungsausschluss:<br>
+      Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.<br>
+      <br>
+      Copyright:<br>
+      Alle Rechte vorbehalten. Inhalte und Struktur dieser Website sind urheberrechtlich geschützt.<br>

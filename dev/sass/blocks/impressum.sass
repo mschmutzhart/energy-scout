@@ -1,0 +1,42 @@
+////////////////////////////////////////
+// $Impressum section
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+
+
+//////////////////////////////////////// Block mixins and functions
+
+
+//////////////////////////////////////// Block styles
+$block: ".impressum"
+
+#{$block}
+  width: 100%
+  min-height: 455px
+  padding: 70px 0
+  background: #323232 url("../images/promo-bg.jpg") center 0 no-repeat
+  background-attachment: fixed
+  background-size: cover
+  text-align: center
+  color:#fff
+
+
+  // $Impressum section title container
+  &__title
+    padding-top: 3rem
+    font-weight: bold
+    max-width: 1024px
+    margin: 0 auto
+    +clearfix
+
+  // $Impressum section inner container
+  &__inner
+    padding-top: 1rem
+    font-size: 14px
+    color: black
+    max-width: 1024px
+    margin: 0 auto
+    +clearfix
+
+
