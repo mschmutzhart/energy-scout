@@ -637,6 +637,7 @@ body {
 .promo__descr__list {
 	text-align: left;
 	padding: revert;
+	list-style-type: none;
 }
 
 .promo__btn {
