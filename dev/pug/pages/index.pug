@@ -31,10 +31,15 @@ block body-content
   // $Promo section
   section#home.promo.js-jumbo
     h2.promo__title
-      | We build
-      span brand
-    p.promo__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    a.promo__btn(href='#') Learn more
+      | Energy
+      span Scout
+    div.promo__descr
+      p.promo__descr <strong>Wechseln Sie Ihren Stromanbieter und sparen Sie bares Geld!</strong><br>Warum mehr zahlen, als Sie müssen? Finden Sie mit uns den günstigsten Stromanbieter für Ihre Bedürfnisse. Einfach, schnell und unkompliziert – so wechseln Sie Ihren Stromanbieter:
+      ul.promo__descr__list
+       li <strong>Kostenloser Service:</strong> Der Wechsel kostet Sie nichts.
+       li <strong>Unkompliziert:</strong> Kontaktieren Sie uns, wir übernehmen den Rest.
+       li <strong>Garantierte Einsparung:</strong> Reduzieren Sie Ihre Stromkosten ab dem ersten Monat.
+    p.promo__descr Jetzt starten und sparen!
     a.promo__go-next.js-anchor(href='#portfolio') Scroll down
 
 
@@ -157,17 +162,17 @@ block body-content
   // $Contact section
   section#contact.contact
     .contact__inner
-      h2.contact__title Contact us
-      p.contact__descr Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      h2.contact__title Kontaktieren Sie uns
+      p.contact__descr Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.
       form.contact__form(action='#', method='post')
-        input#name.contact__form-input(type='text', name='name', placeholder='Your name')
-        input#email.contact__form-input(type='email', name='email', placeholder='Your email')
-        textarea#message.contact__form-tarea(name='message', placeholder='Your message')
+        input#name.contact__form-input(type='text', name='name', placeholder='Name')
+        input#email.contact__form-input(type='phone', name='phone', placeholder='Telefonnummer')
+        textarea#message.contact__form-tarea(name='message', placeholder='Anmerkung')
         input.contact__form-submit(type='submit', value='Submit')
       .contact__card.vcard
         h3.contact__card-title Information
         .contact__card-item.place
-          .fn.org Bak-One Company
+          .fn.org Ex Ovo GmbH
           .adr
             .street-address 12345 Hollywood Bvld Street
             span.locality Los Angeles

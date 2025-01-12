@@ -257,6 +257,7 @@ body {
 	text-transform: uppercase;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	border-radius: 5px;
 }
 
 .contact__form-submit:hover {
@@ -398,6 +399,7 @@ body {
 	-webkit-transition: background-color .2s;
 	transition: background-color .2s;
 	color: #424242;
+	border-radius: 5px;
 }
 
 .page-header__nav-link:hover,
@@ -451,6 +453,7 @@ body {
 	color: transparent;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	border-radius: 5px;
 }
 
 .page-footer__gotop:hover {
@@ -511,6 +514,7 @@ body {
 	background-color: #1bbc9b;
 	-webkit-transition: background-color .2s;
 	transition: background-color .2s;
+	border-radius: 5px;
 }
 
 .portfolio__filter-btn:hover,
@@ -594,7 +598,7 @@ body {
 	width: 100%;
 	min-height: 455px;
 	padding: 70px 0;
-	background: #323232 url("../images/promo-bg.jpg") center 0 no-repeat;
+	background: #323232 url("../images/promo-bg.png") center 0 no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;
@@ -630,6 +634,11 @@ body {
 	color: #fff;
 }
 
+.promo__descr__list {
+	text-align: left;
+	padding: revert;
+}
+
 .promo__btn {
 	display: block;
 	width: 125px;
@@ -642,6 +651,7 @@ body {
 	text-transform: uppercase;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	border-radius: 5px;
 }
 
 .promo__btn:hover {
@@ -816,7 +826,7 @@ body {
 	width: 100%;
 	min-height: 455px;
 	padding: 70px 0;
-	background: #323232 url("../images/promo-bg.jpg") center 0 no-repeat;
+	background: #323232 url("../images/promo-bg.png") center 0 no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;

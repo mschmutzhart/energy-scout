@@ -15,7 +15,7 @@ $block: ".promo"
   width: 100%
   min-height: 455px
   padding: 70px 0
-  background: #323232 url("../images/promo-bg.jpg") center 0 no-repeat
+  background: #323232 url("../images/promo-bg.png") center 0 no-repeat
   background-attachment: fixed
   background-size: cover
   text-align: center
@@ -47,6 +47,10 @@ $block: ".promo"
     line-height: 1.1
     color: #fff
 
+    &__list
+      text-align: left;
+      padding: revert;
+
 
   // $Promo section button
   &__btn
@@ -60,6 +64,7 @@ $block: ".promo"
     color: #fff
     text-transform: uppercase
     transition: all .5s
+    border-radius: 5px
 
     &:hover
       background-color: darken(#1bbc9b, 10%)
