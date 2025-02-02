@@ -545,6 +545,7 @@ body {
 	height: 180px;
 	margin: 0 auto;
 	max-height: 300px;
+	padding: 15px;
 }
 
 .portfolio__arrow {
@@ -596,8 +597,8 @@ body {
 .portfolio__step {
 	position: relative;
 	display: inline-block;
-	width: 220px;
-	height: 280px;
+	width: 250px;
+	height: 300px;
 	margin: 0 30px 35px;
 	background: #fff;
 	border-radius: 12px;
@@ -622,17 +623,17 @@ body {
 
 .portfolio__step-desc {
 	color: #000000;
-	margin: 10px;
+	margin: 15px;
 }
 
 .portfolio__tile {
-	background-color: #1bbc9b;
+	background-color: #ffffff;
 }
 
 .portfolio__tile:hover {
-	-webkit-transform: translateY(-5px);
-	-ms-transform: translateY(-5px);
-	transform: translateY(-5px);
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
 	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -673,7 +674,7 @@ body {
 	max-width: 580px;
 	margin: 0 auto 50px;
 	font-size: 18px;
-	line-height: 1.1;
+	line-height: 1.2;
 	color: #fff;
 }
 
