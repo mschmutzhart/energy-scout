@@ -46,18 +46,24 @@ block body-content
     .portfolio__inner
       h2.portfolio__title Wie funktioniert's?
       p.portfolio__descr In nur 3 Schritten zum günstigeren Vertrag
-      p.portfolio__inner
-        div.portfolio__step
-          p.portfolio__step-nr 1
-          img.portfolio__item-img.js-lazy(src='static/images/step1.svg', alt='')
-        div.portfolio__arrow
-          img.portfolio__arrow-img.js-lazy(src='static/images/arrow-right.svg', alt='')
-        div.portfolio__step
-          p.portfolio__step-nr 2
-          img.portfolio__item-img.js-lazy(src='static/images/step2.svg', alt='')
-        div.portfolio__step
-          p.portfolio__step-nr 3
-          img.portfolio__item-img.js-lazy(src='static/images/step3.svg', alt='')
+        div.portfolio__descr-img-container
+          div.portfolio__descr-img-row
+            div.portfolio__step.portfolio__tile
+              p.portfolio__step-nr 1
+              img.portfolio__item-img.js-lazy(src='static/images/step1.svg', alt='')
+              p.portfolio__step-desc Kontaktformular ausfüllen und abschicken
+            div.portfolio__arrow
+              img.portfolio__arrow-img.js-lazy(src='static/images/arrow-right.svg', alt='')
+            div.portfolio__step.portfolio__tile
+              p.portfolio__step-nr 2
+              img.portfolio__item-img.js-lazy(src='static/images/step2.svg', alt='')
+              p.portfolio__step-desc Sie werden für ein Beratungsgespräch angerufen
+            div.portfolio__arrow
+              img.portfolio__arrow-img.js-lazy(src='static/images/arrow-right.svg', alt='')
+            div.portfolio__step.portfolio__tile
+              p.portfolio__step-nr 3
+              img.portfolio__item-img.js-lazy(src='static/images/step3.svg', alt='')
+              p.portfolio__step-desc Nach Bestätigung über E-Mail wird der Rest für Sie übernommen!
 
 
   // $Contact section
