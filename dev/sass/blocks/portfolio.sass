@@ -43,6 +43,20 @@ $block: ".portfolio"
     margin-bottom: 40px
 
 
+  &__step
+    position: relative
+    display: inline-block
+    width: 180px
+    height: 180px
+    margin: 0 30px 35px
+
+  &__step-nr
+    display: none
+    font-size: 30px
+    font-weight: bold
+    color: #333333
+    margin-bottom: 20px
+
   // $Portfolio section filter
   &__filter
 
@@ -107,51 +121,18 @@ $block: ".portfolio"
     display: inline-block
     height: 100%
     margin: 0 auto
+    max-height: 300px
 
+  &__arrow
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    align-content: space-evenly;
 
-  // $Portfolio section item caption
-  &__item-caption
-    visibility: hidden
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    padding-top: 35px
-    background-color: rgb(27, 188, 155)
-    background-color: rgba(27, 188, 155, .8)
-    border-radius: 50%
-    color: #fff
-    opacity: 0
-    transition: all .5s
-
-    // $Portfolio section item caption CONTEXT: $Portfolio section item STATE: hover
-    #{$block}__item:hover &
-      opacity: 1
-      visibility: visible
-
-
-  // $Portfolio section item title
-  &__item-title
-    display: block
-    font-size: 18px
-    margin-bottom: 10px
-
-    &:before
-      content: "\f002"
-      box-sizing: border-box
-      display: block
-      width: 40px
-      height: 40px
-      border-radius: 50%
-      margin: 0 auto 20px
-      padding-top: 10px
-      background-color: rgb(204,204,204)
-      background-color: rgba(0, 0, 0, .5)
-      font-family: FontAwesome
-      text-align: center
-
-
-  // $Portfolio section item category
-  &__item-cat
-    display: block
-    font-size: 15px
+  &__arrow-img
+    height: 20%
+    margin: 0 auto
+    max-height: 30px
+    object-fit: contain;
+    object-position: center;

@@ -46,61 +46,18 @@ block body-content
     .portfolio__inner
       h2.portfolio__title Wie funktioniert's?
       p.portfolio__descr In nur 3 Schritten zum günstigeren Vertrag
-      nav.portfolio__filter
-        ul
-          li.portfolio__filter-btn.is-selected.js-filter(data-filter='all') All
-          li.portfolio__filter-btn.js-filter(data-filter='web') Web design
-          li.portfolio__filter-btn.js-filter(data-filter='graphic') Graphic design
-          li.portfolio__filter-btn.js-filter(data-filter='flat') Flat design
-      ul.portfolio__content
-        li.portfolio__item.js-item(data-cat='all flat')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port1.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Flat design
-        li.portfolio__item.js-item(data-cat='all web')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port2.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Web design
-        li.portfolio__item.js-item(data-cat='all graphic')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port3.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Graphic design
-        li.portfolio__item.js-item(data-cat='all graphic web')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port4.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Graphic design
-        li.portfolio__item.js-item(data-cat='all graphic flat')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port6.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Flat design
-        li.portfolio__item.js-item(data-cat='all web')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port5.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Web design
-        li.portfolio__item.js-item(data-cat='all flat web')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port1.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Flat design
-        li.portfolio__item.js-item(data-cat='all web')
-          a(href='#')
-            img.portfolio__item-img.js-lazy(src='static/images/port2.png', alt='')
-            .portfolio__item-caption
-              span.portfolio__item-title Example title
-              span.portfolio__item-cat Web design
+      p.portfolio__inner
+        div.portfolio__step
+          p.portfolio__step-nr 1
+          img.portfolio__item-img.js-lazy(src='static/images/step1.svg', alt='')
+        div.portfolio__arrow
+          img.portfolio__arrow-img.js-lazy(src='static/images/arrow-right.svg', alt='')
+        div.portfolio__step
+          p.portfolio__step-nr 2
+          img.portfolio__item-img.js-lazy(src='static/images/step2.svg', alt='')
+        div.portfolio__step
+          p.portfolio__step-nr 3
+          img.portfolio__item-img.js-lazy(src='static/images/step3.svg', alt='')
 
 
   // $Contact section
