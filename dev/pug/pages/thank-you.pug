@@ -1,0 +1,32 @@
+extends ../layouts/base
+
+block variables
+  - pageLang = ""
+  - pageTitle = "Impressum"
+  - pageDescription = "Page-specific description"
+  - pageKeywords = "Page-specific keywords"
+  - pageUrl = "/impressum"
+
+
+block body-content
+  // $Page header
+  header.page-header.js-header
+    .page-header__inner
+      .page-header__logo
+        h1 Energy Scout
+        | &nbsp;
+        span Tagline TODO
+      nav.page-header__nav.js-nav
+        ul
+          li
+            a.page-header__nav-link.js-anchor.js-link.is-active(href='/#home') Home
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#portfolio') Test
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#team') Ablauf
+          li
+            a.page-header__nav-link.js-anchor.js-link(href='/#contact') Kontakt
+
+  // $Impressum section
+  section#impressum
+    h2.impressum__title Thanks

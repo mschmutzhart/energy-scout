@@ -68,10 +68,10 @@ block body-content
     .contact__inner
       h2.contact__title Kontaktieren Sie uns
       p.contact__descr Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.
-      form.contact__form(action='#', method='post')
-        input#name.contact__form-input(type='text', name='name', placeholder='Name')
-        input#email.contact__form-input(type='phone', name='phone', placeholder='Telefonnummer')
-        textarea#message.contact__form-tarea(name='message', placeholder='Anmerkung')
+      form.submit-to-google-sheet(action='#', name='submit-to-google-sheet')
+        input#name.contact__form-input(type='text', name='Name', placeholder='Name', required=true)
+        input#email.contact__form-input(type='phone', name='Telefon', placeholder='Telefonnummer', required=true)
+        textarea#message.contact__form-tarea(name='Anmerkung', placeholder='Anmerkung')
         input.contact__form-submit(type='submit', value='Submit')
       .contact__card.vcard
         h3.contact__card-title Information

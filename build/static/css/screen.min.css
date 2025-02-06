@@ -348,6 +348,7 @@ body {
 	z-index: 999;
 	-webkit-box-shadow: 0 2px 4px 0 #424242;
 	box-shadow: 0 2px 4px 0 #424242;
+	height: 95px;
 }
 
 .page-header__inner {
