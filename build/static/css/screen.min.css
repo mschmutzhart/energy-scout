@@ -332,7 +332,7 @@ body {
 .page-header {
 	width: 100%;
 	min-height: 95px;
-	background-color: #F5F5F5;
+	background-color: #ecf0f1;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -389,7 +389,7 @@ body {
 .page-header__nav {
 	float: right;
 	margin: 30px 55px 0 0;
-	background-color: #fff;
+	background-color: #ecf0f1;
 }
 
 .page-header__nav li {
@@ -478,7 +478,7 @@ body {
 	width: 100%;
 	min-height: 520px;
 	padding-top: 50px;
-	background-color: #fff;
+	background-color: #F5F5F5;
 	text-align: center;
 }
 
@@ -570,6 +570,7 @@ body {
 	object-fit: contain;
 	-o-object-position: center;
 	object-position: center;
+	margin-bottom: 141.5px;
 }
 
 .portfolio__descr-img-container {
@@ -589,10 +590,7 @@ body {
 }
 
 .portfolio__descr-img-row {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+	display: block;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -605,8 +603,8 @@ body {
 	display: inline-block;
 	width: 250px;
 	height: 300px;
-	margin: 0 30px 35px;
-	background: #fff;
+	margin: 10px 30px 10px;
+	background: #3A9AD9;
 	border-radius: 12px;
 	overflow: hidden;
 	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -632,27 +630,15 @@ body {
 	margin: 15px;
 }
 
-.portfolio__tile {
-	background-color: #ffffff;
-}
-
-.portfolio__tile:hover {
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
-	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 .promo {
 	width: 100%;
 	min-height: 455px;
-	padding: 70px 0;
+	padding: 100px 0;
 	background: #323232 url("../images/promo-bg.png") center 0 no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;
-	color: #fff;
+	color: #F5F5F5;
 }
 
 .promo.is-scroll {
@@ -690,7 +676,7 @@ body {
 	margin: 0 auto 50px;
 	font-size: 18px;
 	line-height: 1.2;
-	color: #fff;
+	color: #F5F5F5;
 }
 
 .promo__descr__list {
@@ -707,7 +693,7 @@ body {
 	padding-top: 10px;
 	background-color: #0097A7;
 	font-size: 15px;
-	color: #fff;
+	color: #F5F5F5;
 	text-transform: uppercase;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -885,16 +871,12 @@ body {
 .impressum {
 	width: 100%;
 	min-height: 455px;
-	padding: 70px 0;
-	background: #323232 url("../images/promo-bg.png") center 0 no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	text-align: center;
-	color: #fff;
+	padding: 30px;
+	color: #424242;
 }
 
 .impressum__title {
-	padding-top: 3rem;
+	padding-top: 1rem;
 	font-weight: bold;
 	max-width: 1024px;
 	margin: 0 auto;
@@ -971,6 +953,18 @@ body {
 .team__member {
 	width: 180px;
 	margin: 0 10px 30px;
+}
+
+}
+
+@media screen and (max-width: 656px) {
+
+.portfolio__arrow {
+	display: none;
+}
+
+.portfolio__step {
+	margin-right: 60px;
 }
 
 }
