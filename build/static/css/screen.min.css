@@ -251,7 +251,7 @@ body {
 	width: 115px;
 	height: 35px;
 	text-align: center;
-	background-color: #1bbc9b;
+	background-color: #0097A7;
 	font-size: 15px;
 	color: #fff;
 	text-transform: uppercase;
@@ -261,7 +261,7 @@ body {
 }
 
 .contact__form-submit:hover {
-	background-color: #158f76;
+	background-color: #006974;
 }
 
 .contact__card {
@@ -332,7 +332,12 @@ body {
 .page-header {
 	width: 100%;
 	min-height: 95px;
-	background-color: #fff;
+	background-color: #F5F5F5;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
 }
 
 .page-header:after {
@@ -405,7 +410,7 @@ body {
 
 .page-header__nav-link:hover,
 .page-header__nav-link.is-active {
-	background-color: #1bbc9b;
+	background-color: #0097A7;
 	color: #fff;
 }
 
@@ -450,7 +455,7 @@ body {
 	font-size: 0;
 	text-align: center;
 	overflow: hidden;
-	background-color: #1bbc9b;
+	background-color: #0097A7;
 	color: transparent;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -458,7 +463,7 @@ body {
 }
 
 .page-footer__gotop:hover {
-	background-color: #158f76;
+	background-color: #006974;
 }
 
 .page-footer__gotop:before {
@@ -512,7 +517,7 @@ body {
 	text-transform: uppercase;
 	padding: 10px;
 	color: #fff;
-	background-color: #1bbc9b;
+	background-color: #0097A7;
 	-webkit-transition: background-color .2s;
 	transition: background-color .2s;
 	border-radius: 5px;
@@ -520,7 +525,7 @@ body {
 
 .portfolio__filter-btn:hover,
 .portfolio__filter-btn.is-selected {
-	background-color: #158f76;
+	background-color: #006974;
 }
 
 .portfolio__content {
@@ -650,6 +655,15 @@ body {
 	color: #fff;
 }
 
+.promo.is-scroll {
+	top: 95;
+	left: 0;
+	z-index: 999;
+	-webkit-box-shadow: 0 2px 4px 0 #424242;
+	box-shadow: 0 2px 4px 0 #424242;
+	height: 95px;
+}
+
 .promo__inner {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -691,7 +705,7 @@ body {
 	height: 35px;
 	margin: 0 auto 45px;
 	padding-top: 10px;
-	background-color: #1bbc9b;
+	background-color: #0097A7;
 	font-size: 15px;
 	color: #fff;
 	text-transform: uppercase;
@@ -701,7 +715,7 @@ body {
 }
 
 .promo__btn:hover {
-	background-color: #158f76;
+	background-color: #006974;
 }
 
 .promo__go-next {

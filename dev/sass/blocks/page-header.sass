@@ -14,8 +14,12 @@ $block: ".page-header"
 #{$block}
   width: 100%
   min-height: 95px
-  background-color: #fff
+  background-color: $background
   +clearfix
+  position: sticky
+  top: 0
+  left: 0
+  z-index: 999
 
   @media screen and (max-width: 480px)
     min-height: 50px
@@ -120,5 +124,5 @@ $block: ".page-header"
     // $Page header navigation link STATE: active state
     &:hover,
     &.is-active
-      background-color: #1bbc9b
+      background-color: $primary-2
       color: #fff
