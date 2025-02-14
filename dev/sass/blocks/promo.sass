@@ -52,14 +52,18 @@ $block: ".promo"
     max-width: 580px
     margin: 0 auto 50px
     font-size: 18px
-    line-height: 1.2
     color: $background
+    text-align: center
+
+    @media screen and (max-width: 640px)
+      max-width: 90%
+      margin: 0 auto 50px
 
     &__list
-      //text-align: left;
-      padding: revert;
-      list-style-type: none;
-      line-height: 1.6rem;
+      list-style-type: none
+
+    &__list li
+      margin-bottom: 20px
 
 
   // $Promo section button

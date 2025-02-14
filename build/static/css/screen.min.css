@@ -174,7 +174,7 @@ body {
 	min-height: 500px;
 	padding: 50px 0;
 	background-color: #ecf0f1;
-	text-align: left;
+	text-align: center;
 }
 
 .contact__inner {
@@ -604,7 +604,7 @@ body {
 	width: 250px;
 	height: 300px;
 	margin: 10px 30px 10px;
-	background: #3A9AD9;
+	background: #ecf0f1;
 	border-radius: 12px;
 	overflow: hidden;
 	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -628,6 +628,7 @@ body {
 .portfolio__step-desc {
 	color: #000000;
 	margin: 15px;
+	font-weight: 400;
 }
 
 .promo {
@@ -675,14 +676,16 @@ body {
 	max-width: 580px;
 	margin: 0 auto 50px;
 	font-size: 18px;
-	line-height: 1.2;
 	color: #F5F5F5;
+	text-align: center;
 }
 
 .promo__descr__list {
-	padding: revert;
 	list-style-type: none;
-	line-height: 1.6rem;
+}
+
+.promo__descr__list li {
+	margin-bottom: 20px;
 }
 
 .promo__btn {
@@ -1009,6 +1012,11 @@ body {
 
 .portfolio__filter li {
 	margin: 0 5px;
+}
+
+.promo__descr {
+	max-width: 90%;
+	margin: 0 auto 50px;
 }
 
 .team {
