@@ -76,24 +76,15 @@
     <!-- $Contact section-->
     <section class="contact" id="contact">
       <div class="contact__inner">
-        <h2 class="contact__title">Kontaktieren Sie uns</h2>
+        <h2 class="contact__title">Kontaktieren Sie uns <br> damit wir ihnen helfen</h2>
         <p class="contact__descr">Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.</p>
         <form class="submit-to-google-sheet" action="#" name="submit-to-google-sheet">
-          <input class="contact__form-input" id="name" type="text" name="Name" placeholder="Name" required>
-          <input class="contact__form-input" id="email" type="phone" name="Telefon" placeholder="Telefonnummer" required>
+          <input class="contact__form-input_name" id="name" type="text" name="Name" placeholder="Name" required>
+          <input class="contact__form-input" id="tel" type="tel" name="Telefon" placeholder="Telefonnummer" required>
+          <input class="contact__form-input" id="email" type="email" name="Email" placeholder="Email" required>
           <textarea class="contact__form-tarea" id="message" name="Anmerkung" placeholder="Anmerkung"></textarea>
-          <input class="contact__form-submit" type="submit" value="Submit">
+          <input class="contact__form-submit" type="submit" value="Abschicken">
         </form>
-        <div class="contact__card vcard">
-          <h3 class="contact__card-title">Information</h3>
-          <div class="contact__card-item place">
-            <div class="fn org">Ex Ovo GmbH</div>
-            <div class="adr">
-              <div class="street-address">Webgasse 5</div><span class="locality">Wien</span>,<span class="region"> Österreich</span>
-            </div>
-          </div>
-          <div class="contact__card-item tel">+43<span class="type"></span>1234567890</div><a class="contact__card-item email" href="#">info@exovo.at</a>
-        </div>
       </div>
     </section>
     <!-- $Page footer-->

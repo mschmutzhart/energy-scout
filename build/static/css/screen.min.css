@@ -232,23 +232,23 @@ body {
 }
 
 .contact__form-tarea {
-	display: block;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 	width: 465px;
 	height: 155px;
-	margin-bottom: 25px;
+	margin: 0 auto 25px auto;
 	padding: 20px 0 0 12px;
 	border: 2px solid #bec3c7;
 	font-style: italic;
 	color: #999;
 	resize: none;
+	display: block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .contact__form-submit {
 	display: block;
 	float: right;
-	width: 115px;
+	width: 135px;
 	height: 35px;
 	text-align: center;
 	background-color: #0097A7;
@@ -635,7 +635,7 @@ body {
 	width: 100%;
 	min-height: 455px;
 	padding: 100px 0;
-	background: #323232 url("../images/promo-bg.png") center 0 no-repeat;
+	background: #323232 url("../images/background-istock.png") center 0 no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	text-align: center;
