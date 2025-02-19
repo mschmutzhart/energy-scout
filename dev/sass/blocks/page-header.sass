@@ -13,8 +13,8 @@ $block: ".page-header"
 
 #{$block}
   width: 100%
-  min-height: 95px
-  background-color: $background-2
+  min-height: 90px
+  background-color: $background-dark
   +clearfix
   position: sticky
   top: 0
@@ -38,6 +38,7 @@ $block: ".page-header"
   &__inner
     max-width: 1024px
     margin: 0 auto
+    color: $background-2
     +clearfix
 
     @media screen and (max-width: 480px)
@@ -47,12 +48,12 @@ $block: ".page-header"
   &__logo
     float: left
     height: 50px
-    margin: 25px 0 0 40px
+    margin: 20px 0 0 40px
     padding: 5px 0 0 65px
     background: url("../images/logo.jpg") 0 center no-repeat
 
     @media screen and (max-width: 800px)
-      margin: 25px 0 0 10px
+      margin: 20px 0 0 10px
 
     @media screen and (max-width: 480px)
       // display: none
@@ -87,11 +88,10 @@ $block: ".page-header"
   // $Page header navigation
   &__nav
     float: right
-    margin: 30px 55px 0 0
-    background-color: $background-2
+    margin: 25px 55px 0 0
 
     @media screen and (max-width: 800px)
-      margin: 30px 10px 0 0
+      margin: 25px 10px 0 0
 
     @media screen and (max-width: 480px)
       float: none
@@ -118,7 +118,7 @@ $block: ".page-header"
     text-transform: uppercase
     padding: 10px
     transition: background-color .2s
-    color: #424242
+    color: $background-2
     border-radius: 5px
 
     // $Page header navigation link STATE: active state
