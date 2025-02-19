@@ -18,7 +18,7 @@ $block: ".contact"
   background-color: $background-2
   text-align: center
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: 800px)
     padding: 50px 10px
 
 
@@ -33,7 +33,6 @@ $block: ".contact"
     font-size: 28px
     font-weight: normal
     margin-bottom: 10px
-    text-transform: capitalize
     text-align: center
 
 
@@ -57,11 +56,24 @@ $block: ".contact"
       max-width: 50%
       margin: 0 2% 0 8%
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       float: none
       max-width: 90%
       margin: 0 auto 50px
 
+  // $Contact section form input
+  &__form-input_name
+    display: inline-block
+    width: 220px
+    height: 45px
+    margin-bottom: 20px
+    padding-left: 12px
+    border: 2px solid #bec3c7
+    font-style: italic
+    color: #999
+
+    @media screen and (max-width: 800px)
+      width: 100%
 
   // $Contact section form input
   &__form-input
@@ -129,7 +141,7 @@ $block: ".contact"
     @media screen and (max-width: 800px)
       width: 40%
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       display: block
       width: 230px
       margin: 20px auto
@@ -142,7 +154,7 @@ $block: ".contact"
     line-height: .5
     text-transform: uppercase
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       text-align: center
 
 

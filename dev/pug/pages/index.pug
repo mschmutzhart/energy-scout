@@ -68,7 +68,7 @@ block body-content
   // $Contact section
   section#contact.contact
     .contact__inner
-      h2.contact__title Kontaktieren Sie uns <br> damit wir ihnen helfen
+      h2.contact__title Kontaktieren Sie uns ...
       p.contact__descr Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.
       form.submit-to-google-sheet(action='#', name='submit-to-google-sheet')
         input#name.contact__form-input_name(type='text', name='Name', placeholder='Name', required=true)
@@ -76,6 +76,7 @@ block body-content
         input#email.contact__form-input(type='email', name='Email', placeholder='Email', required=true)
         textarea#message.contact__form-tarea(name='Anmerkung', placeholder='Anmerkung')
         input.contact__form-submit(type='submit', value='Abschicken')
+      h2.contact__title ... damit wir Ihnen helfen
 
 
 
