@@ -14,12 +14,23 @@ $block: ".promo"
 #{$block}
   width: 100%
   min-height: 455px
-  padding: 70px 0
-  background: #323232 url("../images/promo-bg.jpg") center 0 no-repeat
+  padding: 100px 0
+  background: #323232 url("../images/bw.jpg") center 0 no-repeat
   background-attachment: fixed
   background-size: cover
+  background-blend-mode: multiply;
   text-align: center
-  color:#fff
+  color: $background
+  background-color: $background
+
+
+
+  &.is-scroll
+    top: 95
+    left: 0
+    z-index: 999
+    box-shadow: 0 2px 4px 0 #424242
+    height: 95px
 
 
   // $Promo section inner container
@@ -44,8 +55,18 @@ $block: ".promo"
     max-width: 580px
     margin: 0 auto 50px
     font-size: 18px
-    line-height: 1.1
-    color: #fff
+    color: $background-2
+    text-align: center
+
+    @media screen and (max-width: 800px)
+      max-width: 90%
+      margin: 0 auto 50px
+
+    &__list
+      list-style-type: none
+
+    &__list li
+      margin-bottom: 20px
 
 
   // $Promo section button
@@ -55,14 +76,15 @@ $block: ".promo"
     height: 35px
     margin: 0 auto 45px
     padding-top: 10px
-    background-color: #1bbc9b
+    background-color: $primary-2
     font-size: 15px
-    color: #fff
+    color: $background
     text-transform: uppercase
     transition: all .5s
+    border-radius: 5px
 
     &:hover
-      background-color: darken(#1bbc9b, 10%)
+      background-color: darken($primary-2, 10%)
 
 
   // $Promo section go-next button

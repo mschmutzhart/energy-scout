@@ -15,7 +15,7 @@ $block: ".page-footer"
   width: 100%
   min-height: 85px
   padding-bottom: 30px
-  background-color: #2d3e50
+  background-color: $background-dark
 
   @media screen and (max-width: 480px)
     padding: 0 10px 30px
@@ -60,9 +60,10 @@ $block: ".page-footer"
     font-size: 0
     text-align: center
     overflow: hidden
-    background-color: #1bbc9b
+    background-color: $primary-2
     color: transparent
     transition: all .5s
+    border-radius: 5px
 
     @media screen and (max-width: 480px)
       float: none
@@ -70,7 +71,7 @@ $block: ".page-footer"
       margin: 20px auto 0
 
     &:hover
-      background-color: darken(#1bbc9b, 10%)
+      background-color: darken($primary-2, 10%)
 
     &:before
       font-size: 20px

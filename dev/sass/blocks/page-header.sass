@@ -13,9 +13,13 @@ $block: ".page-header"
 
 #{$block}
   width: 100%
-  min-height: 95px
-  background-color: #fff
+  min-height: 90px
+  background-color: $background-dark
   +clearfix
+  position: sticky
+  top: 0
+  left: 0
+  z-index: 999
 
   @media screen and (max-width: 480px)
     min-height: 50px
@@ -27,12 +31,14 @@ $block: ".page-header"
     left: 0
     z-index: 999
     box-shadow: 0 2px 4px 0 #424242
+    height: 95px
 
 
   // $Page header inner container
   &__inner
     max-width: 1024px
     margin: 0 auto
+    color: $background-2
     +clearfix
 
     @media screen and (max-width: 480px)
@@ -42,12 +48,12 @@ $block: ".page-header"
   &__logo
     float: left
     height: 50px
-    margin: 25px 0 0 40px
+    margin: 20px 0 0 40px
     padding: 5px 0 0 65px
     background: url("../images/logo.jpg") 0 center no-repeat
 
     @media screen and (max-width: 800px)
-      margin: 25px 0 0 10px
+      margin: 20px 0 0 10px
 
     @media screen and (max-width: 480px)
       // display: none
@@ -62,7 +68,7 @@ $block: ".page-header"
       font-weight: bold
       text-transform: uppercase
 
-      @media screen and (max-width: 640px)
+      @media screen and (max-width: 800px)
         display: none
 
       @media screen and (max-width: 480px)
@@ -72,7 +78,7 @@ $block: ".page-header"
       font-size: 14px
       text-transform: capitalize
 
-      @media screen and (max-width: 640px)
+      @media screen and (max-width: 800px)
         display: none
 
       @media screen and (max-width: 480px)
@@ -82,11 +88,10 @@ $block: ".page-header"
   // $Page header navigation
   &__nav
     float: right
-    margin: 30px 55px 0 0
-    background-color: #fff
+    margin: 25px 55px 0 0
 
     @media screen and (max-width: 800px)
-      margin: 30px 10px 0 0
+      margin: 25px 10px 0 0
 
     @media screen and (max-width: 480px)
       float: none
@@ -99,7 +104,7 @@ $block: ".page-header"
       display: inline-block
       margin-left: 5px
 
-      @media screen and (max-width: 640px)
+      @media screen and (max-width: 800px)
         margin-left: 0
 
       @media screen and (max-width: 480px)
@@ -113,10 +118,11 @@ $block: ".page-header"
     text-transform: uppercase
     padding: 10px
     transition: background-color .2s
-    color: #424242
+    color: $background-2
+    border-radius: 5px
 
     // $Page header navigation link STATE: active state
     &:hover,
     &.is-active
-      background-color: #1bbc9b
+      background-color: $primary-2
       color: #fff

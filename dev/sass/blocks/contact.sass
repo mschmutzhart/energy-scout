@@ -15,10 +15,10 @@ $block: ".contact"
   width: 100%
   min-height: 500px
   padding: 50px 0
-  background-color: #ecf0f1
-  text-align: left
+  background-color: $background-2
+  text-align: center
 
-  @media screen and (max-width: 640px)
+  @media screen and (max-width: 800px)
     padding: 50px 10px
 
 
@@ -33,9 +33,15 @@ $block: ".contact"
     font-size: 28px
     font-weight: normal
     margin-bottom: 10px
-    text-transform: capitalize
     text-align: center
 
+  // $Contact section title2
+  &__title-2
+    font-size: 28px
+    font-weight: normal
+    margin-bottom: 10px
+    text-align: center
+    margin-left: 135px
 
   // $Contact section description
   &__descr
@@ -57,18 +63,31 @@ $block: ".contact"
       max-width: 50%
       margin: 0 2% 0 8%
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       float: none
       max-width: 90%
       margin: 0 auto 50px
 
+  // $Contact section form input
+  &__form-input_name
+    display: inline-block
+    width: 220px
+    height: 45px
+    margin-bottom: 10px
+    padding-left: 12px
+    border: 2px solid #bec3c7
+    font-style: italic
+    color: #999
+
+    @media screen and (max-width: 800px)
+      width: 100%
 
   // $Contact section form input
   &__form-input
     display: inline-block
     width: 220px
     height: 45px
-    margin-bottom: 20px
+    margin-bottom: 10px
     padding-left: 12px
     border: 2px solid #bec3c7
     font-style: italic
@@ -81,18 +100,38 @@ $block: ".contact"
       margin-right: 20px
 
 
+  &__form-input_radio-group
+    display: inline-block
+    width: 220px
+    height: 45px
+    text-align: left
+    margin-right: 20px
+    margin-top: 5px;
+    line-height: 1.7 rem
+
+    @media screen and (max-width: 800px)
+      width: 100%
+
+  &__form-input_radio-group-input
+    white-space: nowrap
+    margin: 10px
+
+  &__conditional
+    @media screen and (max-width: 800px)
+      display: none
+
   // $Contact section form text area
   &__form-tarea
-    display: block
-    box-sizing: border-box
     width: 465px
     height: 155px
-    margin-bottom: 25px
+    margin: 0 auto 25px auto
     padding: 20px 0 0 12px
     border: 2px solid #bec3c7
     font-style: italic
     color: #999
     resize: none
+    display: block
+    box-sizing: border-box
 
     @media screen and (max-width: 800px)
       width: 100%
@@ -102,21 +141,22 @@ $block: ".contact"
   &__form-submit
     display: block
     float: right
-    width: 115px
+    width: 135px
     height: 35px
     text-align: center
-    background-color: #1bbc9b
+    background-color: $primary-2
     font-size: 15px
     color: #fff
     text-transform: uppercase
     transition: all .5s
+    border-radius: 5px
 
     @media screen and (max-width: 480px)
       float: none
       margin: 0 auto
 
     &:hover
-      background-color: darken(#1bbc9b, 10%)
+      background-color: darken($primary-2, 10%)
 
 
   // $Contact section card
@@ -128,7 +168,7 @@ $block: ".contact"
     @media screen and (max-width: 800px)
       width: 40%
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       display: block
       width: 230px
       margin: 20px auto
@@ -141,7 +181,7 @@ $block: ".contact"
     line-height: .5
     text-transform: uppercase
 
-    @media screen and (max-width: 640px)
+    @media screen and (max-width: 800px)
       text-align: center
 
 
