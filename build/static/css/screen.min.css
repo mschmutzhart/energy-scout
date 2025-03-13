@@ -195,6 +195,14 @@ body {
 	text-align: center;
 }
 
+.contact__title-2 {
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-left: 135px;
+}
+
 .contact__descr {
 	font-size: 14px;
 	font-weight: normal;
@@ -219,7 +227,7 @@ body {
 	display: inline-block;
 	width: 220px;
 	height: 45px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding-left: 12px;
 	border: 2px solid #bec3c7;
 	font-style: italic;
@@ -230,7 +238,7 @@ body {
 	display: inline-block;
 	width: 220px;
 	height: 45px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding-left: 12px;
 	border: 2px solid #bec3c7;
 	font-style: italic;
@@ -239,6 +247,21 @@ body {
 
 .contact__form-input:first-of-type {
 	margin-right: 20px;
+}
+
+.contact__form-input_radio-group {
+	display: inline-block;
+	width: 220px;
+	height: 45px;
+	text-align: left;
+	margin-right: 20px;
+	margin-top: 5px;
+	line-height: 1.7 rem;
+}
+
+.contact__form-input_radio-group-input {
+	white-space: nowrap;
+	margin: 10px;
 }
 
 .contact__form-tarea {
@@ -956,6 +979,14 @@ body {
 
 .contact__form-input {
 	width: 100%;
+}
+
+.contact__form-input_radio-group {
+	width: 100%;
+}
+
+.contact__conditional {
+	display: none;
 }
 
 .contact__form-tarea {

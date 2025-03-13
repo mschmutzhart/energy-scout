@@ -70,12 +70,25 @@ block body-content
       h2.contact__title Kontaktieren Sie uns ...
       p.contact__descr Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.
       form.submit-to-google-sheet(action='#', name='submit-to-google-sheet')
-        input#name.contact__form-input_name(type='text', name='Name', placeholder='Name', required=true)
+        input#name.contact__form-input(type='text', name='Name', placeholder='Name', required=true)
         input#tel.contact__form-input(type='tel', name='Telefon', placeholder='Telefonnummer', required=true)
+        br
+        div#selection.contact__form-input_radio-group
+          label.contact__form-input_radio-group-input
+            input#selection-strom(type='radio', name='Auswahl', value='Strom',checked)
+            span  Strom
+            br.contact__conditional
+          label.contact__form-input_radio-group-input
+            input#selection-gas(type='radio', name='Auswahl', value='Strom')
+            span  Gas
+            br.contact__conditional
+          label.contact__form-input_radio-group-input
+            input#selection-both(type='radio', name='Auswahl', value='Strom')
+            span  Strom & Gas
         input#email.contact__form-input(type='email', name='Email', placeholder='Email', required=true)
         textarea#message.contact__form-tarea(name='Anmerkung', placeholder='Anmerkung')
         input.contact__form-submit(type='submit', value='Abschicken')
-      h2.contact__title ... damit wir Ihnen helfen
+      h2.contact__title-2 ... damit wir Ihnen helfen
 
 
 

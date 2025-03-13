@@ -35,6 +35,13 @@ $block: ".contact"
     margin-bottom: 10px
     text-align: center
 
+  // $Contact section title2
+  &__title-2
+    font-size: 28px
+    font-weight: normal
+    margin-bottom: 10px
+    text-align: center
+    margin-left: 135px
 
   // $Contact section description
   &__descr
@@ -66,7 +73,7 @@ $block: ".contact"
     display: inline-block
     width: 220px
     height: 45px
-    margin-bottom: 20px
+    margin-bottom: 10px
     padding-left: 12px
     border: 2px solid #bec3c7
     font-style: italic
@@ -80,7 +87,7 @@ $block: ".contact"
     display: inline-block
     width: 220px
     height: 45px
-    margin-bottom: 20px
+    margin-bottom: 10px
     padding-left: 12px
     border: 2px solid #bec3c7
     font-style: italic
@@ -92,6 +99,26 @@ $block: ".contact"
     &:first-of-type
       margin-right: 20px
 
+
+  &__form-input_radio-group
+    display: inline-block
+    width: 220px
+    height: 45px
+    text-align: left
+    margin-right: 20px
+    margin-top: 5px;
+    line-height: 1.7 rem
+
+    @media screen and (max-width: 800px)
+      width: 100%
+
+  &__form-input_radio-group-input
+    white-space: nowrap
+    margin: 10px
+
+  &__conditional
+    @media screen and (max-width: 800px)
+      display: none
 
   // $Contact section form text area
   &__form-tarea

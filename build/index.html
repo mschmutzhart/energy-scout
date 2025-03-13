@@ -79,13 +79,24 @@
         <h2 class="contact__title">Kontaktieren Sie uns ...</h2>
         <p class="contact__descr">Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.</p>
         <form class="submit-to-google-sheet" action="#" name="submit-to-google-sheet">
-          <input class="contact__form-input_name" id="name" type="text" name="Name" placeholder="Name" required>
-          <input class="contact__form-input" id="tel" type="tel" name="Telefon" placeholder="Telefonnummer" required>
+          <input class="contact__form-input" id="name" type="text" name="Name" placeholder="Name" required>
+          <input class="contact__form-input" id="tel" type="tel" name="Telefon" placeholder="Telefonnummer" required><br>
+          <div class="contact__form-input_radio-group" id="selection">
+            <label class="contact__form-input_radio-group-input">
+              <input id="selection-strom" type="radio" name="Auswahl" value="Strom" checked><span> Strom</span><br class="contact__conditional">
+            </label>
+            <label class="contact__form-input_radio-group-input">
+              <input id="selection-gas" type="radio" name="Auswahl" value="Strom"><span> Gas</span><br class="contact__conditional">
+            </label>
+            <label class="contact__form-input_radio-group-input">
+              <input id="selection-both" type="radio" name="Auswahl" value="Strom"><span> Strom & Gas</span>
+            </label>
+          </div>
           <input class="contact__form-input" id="email" type="email" name="Email" placeholder="Email" required>
           <textarea class="contact__form-tarea" id="message" name="Anmerkung" placeholder="Anmerkung"></textarea>
           <input class="contact__form-submit" type="submit" value="Abschicken">
         </form>
-        <h2 class="contact__title">... damit wir Ihnen helfen</h2>
+        <h2 class="contact__title-2">... damit wir Ihnen helfen</h2>
       </div>
     </section>
     <!-- $Page footer-->
