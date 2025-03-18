@@ -1,11 +1,11 @@
 {
   "site": {
-    "lang": "en",
-    "title": "Design studio template",
+    "lang": "de",
+    "title": "Energy Scout",
     "titleDelim": " | ",
-    "description": "Free responsive flat designed one page template",
-    "keywords": "html template, theme, freebie, opensource",
-    "url": "http://website-templates.github.io/design-studio_one-page-template"
+    "description": "Finde den besten Strom/Gas Vertrag für dich!",
+    "keywords": "energy, strom, gas, vertrag, savings, sparen",
+    "url": "https://energy-scout.at/"
   },
   "modules": {
     "googleFonts": "https://fonts.googleapis.com/css?family=Lato:400,300,700",
