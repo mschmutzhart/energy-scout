@@ -1083,13 +1083,14 @@ body {
 	display: none;
 }
 
-.portfolio__step {
-	margin-right: 60px;
-}
-
 }
 
 @media screen and (max-width: 480px) {
+
+.contact__title-2 {
+	float: none;
+	margin: 0 auto;
+}
 
 .contact__form-submit {
 	float: none;
