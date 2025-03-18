@@ -2,10 +2,10 @@ extends ../layouts/base
 
 block variables
   - pageLang = ""
-  - pageTitle = "Impressum"
+  - pageTitle = "Thank You"
   - pageDescription = "Page-specific description"
   - pageKeywords = "Page-specific keywords"
-  - pageUrl = "/impressum"
+  - pageUrl = "/thankyou"
 
 
 block body-content
@@ -18,12 +18,13 @@ block body-content
       nav.page-header__nav.js-nav
         ul
           li
-            a.page-header__nav-link.js-anchor.js-link.is-active(href='#home') Home
+            a.page-header__nav-link.js-anchor.js-link.is-active(href='/#home') Home
           li
-            a.page-header__nav-link.js-anchor.js-link(href='#portfolio') Ablauf
+            a.page-header__nav-link.js-anchor.js-link(href='/#portfolio') Ablauf
           li
-            a.page-header__nav-link.js-anchor.js-link(href='#contact') Kontakt
+            a.page-header__nav-link.js-anchor.js-link(href='/#contact') Kontakt
 
   // $Impressum section
-  section#impressum
-    h2.impressum__title Thanks
+  section#impressum.impressum
+    h2.impressum__title Vielen Dank.
+    p.impressum__inner Sie werden in Kürze von einem unserer Servicepartner kontaktiert.

@@ -71,7 +71,7 @@ block body-content
       p.contact__descr Hinterlassen Sie ihre Kontaktinformationen und wir rufen Sie in Kürze zurück.
       form.submit-to-google-sheet(action='#', name='submit-to-google-sheet')
         input#name.contact__form-input(type='text', name='Name', placeholder='Name', required=true)
-        input#tel.contact__form-input(type='tel', name='Telefon', placeholder='Telefonnummer', required=true)
+        input#tel.contact__form-input(type='text', name='Telefon', placeholder='Telefonnummer')
         br
         div#selection.contact__form-input_radio-group
           label.contact__form-input_radio-group-input
@@ -79,16 +79,16 @@ block body-content
             span  Strom
             br.contact__conditional
           label.contact__form-input_radio-group-input
-            input#selection-gas(type='radio', name='Auswahl', value='Strom')
+            input#selection-gas(type='radio', name='Auswahl', value='Gas')
             span  Gas
             br.contact__conditional
           label.contact__form-input_radio-group-input
-            input#selection-both(type='radio', name='Auswahl', value='Strom')
+            input#selection-both(type='radio', name='Auswahl', value='Strom & Gas')
             span  Strom & Gas
-        input#email.contact__form-input(type='email', name='Email', placeholder='Email', required=true)
+        input#email.contact__form-input(type='email', name='Email', placeholder='Email')
         textarea#message.contact__form-tarea(name='Anmerkung', placeholder='Anmerkung')
         input.contact__form-submit(type='submit', value='Abschicken')
-      h2.contact__title-2 ... damit wir Ihnen helfen
+      h2.contact__title-2 ... damit wir Ihnen helfen.
 
 
 

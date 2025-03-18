@@ -10,6 +10,12 @@ const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
   e.preventDefault()
+  let email = document.getElementById("email").value.trim();
+  let phone = document.getElementById("tel").value.trim();
+  if (!email && !phone) {
+    alert("Bitte geben Sie entweder eine E-Mail oder eine Telefonnummer an.");
+    return;
+  }
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
       console.log('Success!', response);
